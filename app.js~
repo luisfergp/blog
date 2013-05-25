@@ -27,8 +27,8 @@ app.use(express.bodyParser());
 app.use(express.methodOverride());
 app.use(express.cookieParser('your secret here'));
 app.use(express.session());
-//app.use(count.getCount);
-app.use(count.count_mw());
+app.use(count.getCount);
+//app.use(count.count_mw());
 app.use(app.router);  //calculo de rutas
 app.use(express.static(path.join(__dirname, 'public')));
 
